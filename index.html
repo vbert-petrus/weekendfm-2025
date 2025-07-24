@@ -4,7 +4,7 @@ File: /index.html
 File Created: 2025-07-11, 13:17:29
 Author: Wojciech Sobczak (wsobczak@gmail.com)
 -----
-Last Modified: 2025-07-18, 14:57:03
+Last Modified: 2025-07-24, 15:03:51
 Modified By: Wojciech Sobczak (wsobczak@gmail.com)
 -----
 Copyright © 2021 - 2025 by vbert
@@ -28,356 +28,105 @@ Copyright © 2021 - 2025 by vbert
 <iframe loading="lazy" src="video-player.html" title="..."></iframe>
 -->
 <body>
-    <div class="top-bar d-none d-xl-block">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <ul class="nav frequencies">
-                        <li>
-                            <span class="location">Chojnice, Człuchów, Tuchola</span>
-                            <span class="frequency">99,30 FM</span>
-                        </li>
-                        <li>
-                            <span class="location">Kościerzyna</span>
-                            <span class="frequency">91,70 FM</span>
-                        </li>
-                        <li>
-                            <span class="location">Bytów</span>
-                            <span class="frequency">105,80 FM</span>
-                        </li>
-                        <li>
-                            <span class="location">Miastko</span>
-                            <span class="frequency">87,80 FM</span>
-                        </li>
-                        <li>
-                            <span class="location">Sępólno Krajeńskie</span>
-                            <span class="frequency">92,60 FM</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <main id="page">
-        <header id="mainHeader" class="main-header sticky-top">
-            <div class="middle-bar">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-3 col-xl-10 position-relative">
-                            <a href="" class="navbar-brand">
-                                <img loading="lazy" src="assets/img/radio-weekendfm-logo.png" alt="Radio Weekend FM" srcset="">
-                            </a>
-                            <ul class="nav middle-bar_nav d-none d-xl-flex top-main-menu">
-                                <li class="has-submenu">
-                                    <a href="">Wiadomości</a>
-                                </li>
-                                <li class="has-submenu">
-                                    <a href="">Radio</a>
-                                </li>
-                                <li class="has-submenu">
-                                    <a href="">Kultura i rozrywka</a>
-                                </li>
-                                <li class="has-submenu">
-                                    <a href="">Konkursy</a>
-                                </li>
-                                <li class="has-submenu">
-                                    <a href="">Kontakt</a>
-                                </li>
-                                <li>
-                                    <a href="">Ogłoszenia</a>
-                                </li>
-                                <li>
-                                    <a href="">Katalog firm</a>
-                                </li>
-<!-- 
-<li id="linkNews" class="main-menu-item has-mega-box"><a class="main-menu-item-link" href="#" data-target="megaBoxNews" title="Wiadomości"><span>Wiadomości</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ico-chevron-down" viewBox="0 0 448 512"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></a><div id="megaBoxNews" class="mega-box"><div class="mega-wrapper wrapper"><div class="content">
-    <div class="column w-30">
-        <section>
-            <h2>Wybierz region:</h2>
-            <ul class="mega-links">
-                <li><a class="mega-link" href="http://localhost/wfm/www/?chojnice">Chojnice</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?muzyka">Muzyka</a></li>http://localhost/wfm/www/?czluchow">Człuchów</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?bytow">Bytów</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?koscierzyna">Kościerzyna</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?sepolno_krajenskie">Sępólno Krajeńskie</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?tuchola">Tuchola</a></li>
-            </ul>
-        </section>
-    </div>
-    <div class="column w-30">
-        <section>
-            <h2>Wybierz temat:</h2>
-            <ul class="mega-links">
-                <li><a class="mega-link" href="http://localhost/wfm/www/?wypadek">UWAGA Wypadek!</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?kronika_policyjna">Kronika policyjna</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?sport">Sport</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?kultura">Kultura</a></li>
-            </ul>
-        </section>
-    </div>
-    <div class="column w-30">
-        <section>
-            <h2>Polska i świat:</h2>
-            <ul class="mega-links">
-                <li><a class="mega-link" href="http://localhost/wfm/www/?polska_i_swiat">Polska i Świat</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Daj nam znać!</h2>
-            <ul class="mega-links">
-                <li class="no-link">Jesteś świadkiem czegoś ciekawego, sensacyjnego, bulwersującego?<br>Wyślij do nas wiadomość, zdjęcia lub filmy na adres: <a href="mailto:info@weekendfm.pl">info@weekendfm.pl</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Materiały sponsorowane</h2>
-            <ul class="mega-links">
-                <li><a class="mega-link" href="http://localhost/wfm/www/?artykuly_sponsorowane">Artykuły sponsorowane</a></li>
-            </ul>
-        </section>
-    </div>
-</div>
-</div></div></li>
-<li id="linkRadio" class="main-menu-item has-mega-box"><a class="main-menu-item-link" href="#" data-target="megaBoxRadio" title="Radio"><span>Radio</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ico-chevron-down" viewBox="0 0 448 512"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></a><div id="megaBoxRadio" class="mega-box"><div class="mega-wrapper wrapper"><div class="content">
-    <div class="column w-30">
-        <section>
-            <h2>Jak słuchać?</h2>
-            <ul class="mega-links">
-                <li><a class="mega-link" href="http://localhost/wfm/www/?n=49957#internet">Słuchaj przez Internet</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?n=49957#fm">Słuchaj w FM</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?n=49957#mobile">Słuchaj w telefonie</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Pobierz aplikację:</h2>
-            <div class="applications">
-                <a class="app-link" href="https://play.google.com/store/apps/details?id=pl.weekendfm.radioapp" target="_blank" title="Pobierz aplikację Radio Weekend FM ze sklepu Google Play">
-                    <img src="assets/img/pobierz-z-google-play.png" alt="Sklep Google Play: Radio Weekend FM">
-                </a>
-                <a class="app-link" href="https://itunes.apple.com/pl/app/radio-weekend-fm/id895427024?mt=8" target="_blank" title="Pobierz aplikację Radio Weekend FM ze sklepu App Store">
-                    <img src="assets/img/pobierz-z-app-store.png" alt="Sklep App Store: Radio Weekend FM">
-                </a>
-            </div>
-        </section>
-        <section>
-            <h2>Muzyka</h2>
-            <ul class="mega-links">
-                <li><a class="mega-link" href="http://localhost/wfm/www/arch.php?gralismy">Graliśmy w Weekend FM</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?hitport2">Lista przebojów - HIT-PORT</a></li>
-            </ul>
-        </section>
-    </div>
-    <div class="column w-30">
-        <section>
-            <h2>Audycje</h2>
-            <ul class="mega-links">
-                <li><a class="mega-link" href="http://localhost/wfm/www/?n=58483#rp">Weekend na dzień dobry</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?n=58483#wjb">Weekend jest blisko</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?n=58483#tmd">Weekend po południu</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?hitport2">Hit-Port</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?n=58483#wpm">Weekend pełen muzyki</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Audycje tematyczne</h2>
-            <ul class="mega-links">
-                <li><a class="mega-link" href="http://localhost/wfm/www/?motoweekend">Motoweekend</a></li>
-            </ul>
-        </section>
-    </div>
-    <div class="column w-30">
-        <section>
-            <h2>O radiu</h2>
-            <ul class="mega-links">
-                <li><a class="mega-link" href="http://localhost/wfm/www/?n=49977">Zasięg</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?n=50467">Ramówka</a></li>
-                <li><a class="mega-link" href="http://localhost/wfm/www/?n=49986">Ludzie radia</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Częstotliwości</h2>
-            <div class="frequencies">
-                <div class="frequency w-100"><h4>99,30 FM</h4><p>Chojnice, Człuchów, Tuchola</p></div>
-                <div class="frequency w-48"><h4>91,70 FM</h4><p>Kościerzyna</p></div>
-                <div class="frequency w-48"><h4>105,80 FM</h4><p>Bytów</p></div>
-                <div class="frequency w-48"><h4>87,80 FM</h4><p>Miastko</p></div>
-                <div class="frequency w-48"><h4>92,60 FM</h4><p>Sępólno Krajeńskie</p></div>
-            </div>
-        </section>
-    </div>
-</div>
-</div></div></li>
-<li id="linkCulture" class="main-menu-item has-mega-box"><a class="main-menu-item-link" href="#" data-target="megaBoxCulture" title="Kultura i rozrywka"><span>Kultura i rozrywka</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ico-chevron-down" viewBox="0 0 448 512"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></a><div id="megaBoxCulture" class="mega-box"><div class="mega-wrapper wrapper"><div class="content">
-    <div class="column">
-        <div class="cards w-100">
-            <div class="card-box">
-    <div class="card">
-        <a href="http://localhost/wfm/www/?n=110185&amp;w-chojnickim-centrum-kultury-odbedzie-sie-dzien-seniora-atrakcja-bedzie-koncert-powrocisz-tu" title="Chojnice: W Chojnickim Centrum Kultury odbędzie się Dzień Seniora. Atrakcją będzie koncert &quot;Powrócisz tu&quot;">
-            <div class="card-image">
-                <img src="http://localhost/wfm/www/_fot/!news/2023_11/male/1700047768radoslaw_krajewicz.jpg" alt="W Chojnickim Centrum Kultury odbędzie się Dzień Seniora. Atrakcją będzie koncert &quot;Powrócisz tu&quot;">
-            </div>
-            <div class="card-body">
-                <h4 class="card-title">W Chojnickim Centrum Kultury odbędzie się Dzień Seniora. Atrakcją będzie koncert "Powrócisz tu"</h4>
-                <p class="card-text">Z piosenkami z repertuaru Ireny Santor.</p>
-            </div>
-        </a>
-    </div>
-</div>
-
-<div class="card-box">
-    <div class="card">
-        <a href="http://localhost/wfm/www/?n=110109&amp;miejsko-gminny-osrodek-kultury-w-kamieniu-krajenskim-zaprasza-na-recital-poetycki-i-odsoniecie-muralu" title="Sępólno Krajeńskie: Miejsko-Gminny Ośrodek Kultury w Kamieniu Krajeńskim zaprasza na recital poetycki i odsłonięcie muralu">
-            <div class="card-image">
-                <img src="http://localhost/wfm/www/_fot/!news/2023_11/male/1699607227polskim_slowem_pisane.jpg" alt="Miejsko-Gminny Ośrodek Kultury w Kamieniu Krajeńskim zaprasza na recital poetycki i odsłonięcie muralu">
-            </div>
-            <div class="card-body">
-                <h4 class="card-title">Miejsko-Gminny Ośrodek Kultury w Kamieniu Krajeńskim zaprasza na recital poetycki i odsłonięcie muralu</h4>
-                <p class="card-text">Dziś (10.11.).</p>
-            </div>
-        </a>
-    </div>
-</div>
-
-<div class="card-box">
-    <div class="card">
-        <a href="http://localhost/wfm/www/?n=109860&amp;katarzyna-groniec-wystapi-w-chojnicach-rozmowa" title="Chojnice: Katarzyna Groniec wystąpi w Chojnicach (ROZMOWA)">
-            <div class="card-image">
-                <img src="http://localhost/wfm/www/_fot/!news/2023_10/male/1698305803koncert-katarzyny-groniec.jpg" alt="Katarzyna Groniec wystąpi w Chojnicach (ROZMOWA)">
-            </div>
-            <div class="card-body">
-                <h4 class="card-title">Katarzyna Groniec wystąpi w Chojnicach (ROZMOWA)</h4>
-                <p class="card-text">W Chojnickim Centrum Kultury wokalistka i aktorka zaśpiewa w czwartek (26.10) piosenki ze swojej najnowszej płyty. </p>
-            </div>
-        </a>
-    </div>
-</div>
-
-<div class="card-box">
-    <div class="card">
-        <a href="http://localhost/wfm/www/?n=109836&amp;wernisaz-w-miejskiej-bibliotece-publicznej-w-tucholi-obrazy-zaprezentuje-malarz-samouk-albin-rozej-z-raciaza" title="Tuchola: Wernisaż w Miejskiej Bibliotece Publicznej w Tucholi. Obrazy zaprezentuje malarz-samouk Albin Rożej z Raciąża">
-            <div class="card-image">
-                <img src="http://localhost/wfm/www/_fot/!news/2023_10/male/1698151972wystawa_tuchola.jpg" alt="Wernisaż w Miejskiej Bibliotece Publicznej w Tucholi. Obrazy zaprezentuje malarz-samouk Albin Rożej z Raciąża">
-            </div>
-            <div class="card-body">
-                <h4 class="card-title">Wernisaż w Miejskiej Bibliotece Publicznej w Tucholi. Obrazy zaprezentuje malarz-samouk Albin Rożej z Raciąża</h4>
-                <p class="card-text">Wystawę będzie można oglądać do 20 listopada.</p>
-            </div>
-        </a>
-    </div>
-</div>
-
-<div class="card-box">
-    <div class="card">
-        <a href="http://localhost/wfm/www/?n=109757&amp;w-czuchowie-jak-nad-sekwana-jutro-2110-odbeda-sie-tu-dni-kultury-francuskiej-oraz-konkurs-piosenki-francuskiej" title="Człuchów: W Człuchowie jak nad Sekwaną. Jutro (21.10.) odbędą się tu Dni Kultury Francuskiej oraz Konkurs Piosenki Francuskiej">
-            <div class="card-image">
-                <img src="http://localhost/wfm/www/_fot/!news/2023_10/male/1697777571plakat_dni_kultury_francuskiej.jpg" alt="W Człuchowie jak nad Sekwaną. Jutro (21.10.) odbędą się tu Dni Kultury Francuskiej oraz Konkurs Piosenki Francuskiej">
-            </div>
-            <div class="card-body">
-                <h4 class="card-title">W Człuchowie jak nad Sekwaną. Jutro (21.10.) odbędą się tu Dni Kultury Francuskiej oraz Konkurs Piosenki Francuskiej</h4>
-                <p class="card-text">Im. Jadwigi Loroch.</p>
-            </div>
-        </a>
-    </div>
-</div>
-
-<div class="card-box">
-    <div class="card">
-        <a href="http://localhost/wfm/www/?n=109731&amp;dzis-1910-w-czuchowie-koncert-ach-jak-przyjemnie-zagra-zespo-arte-con-brio" title="Człuchów: Dziś (19.10.) w Człuchowie koncert &quot;Ach, jak przyjemnie&quot;. Zagra zespół Arte Con Brio">
-            <div class="card-image">
-                <img src="http://localhost/wfm/www/_fot/!news/2023_10/male/1697618254arte_con_brio.jpg" alt="Dziś (19.10.) w Człuchowie koncert &quot;Ach, jak przyjemnie&quot;. Zagra zespół Arte Con Brio">
-            </div>
-            <div class="card-body">
-                <h4 class="card-title">Dziś (19.10.) w Człuchowie koncert "Ach, jak przyjemnie". Zagra zespół Arte Con Brio</h4>
-                <p class="card-text">Początek koncertu o 18.00 w człuchowskim zamku.</p>
-            </div>
-        </a>
-    </div>
-</div>
-
-        </div>
-    </div>
-</div>
-</div></div></li>
-<li id="linkContests" class="main-menu-item has-mega-box"><a class="main-menu-item-link" href="#" data-target="megaBoxContests" title="Konkursy"><span>Konkursy</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ico-chevron-down" viewBox="0 0 448 512"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></a><div id="megaBoxContests" class="mega-box"><div class="mega-wrapper wrapper"><div class="content">
-    <div class="column">
-        <div class="cards w-100">
-            <div class="card-box">
-    <div class="card">
-        <a href="http://localhost/wfm/www/?n=109859&amp;konkurs-w-weekend-fm-wybierz-sie-na-niezwyka-kolacje-w-klimatycznej-restauracji-w-charzykowach" title="Konkurs w Weekend FM. Wybierz się na niezwykłą kolację w klimatycznej restauracji w Charzykowach ">
-            <div class="card-image">
-                <img src="http://localhost/wfm/www/_fot/!news/2023_10/male/1698304542konkurs-restauracja.jpg" alt="Konkurs w Weekend FM. Wybierz się na niezwykłą kolację w klimatycznej restauracji w Charzykowach ">
-            </div>
-            <div class="card-body">
-                <h4 class="card-title">Konkurs w Weekend FM. Wybierz się na niezwykłą kolację w klimatycznej restauracji w Charzykowach </h4>
-                <p class="card-text"></p>
-            </div>
-        </a>
-    </div>
-</div>
-
-<div class="card-box">
-    <div class="card">
-        <a href="http://localhost/wfm/www/?n=105659&amp;weekend-w-kinie-wygraj-bilety-do-kina-w-chojnickim-centrum-kultury" title="Weekend w kinie. Wygraj bilety do kina w Chojnickim Centrum Kultury!">
-            <div class="card-image">
-                <img src="http://localhost/wfm/www/_fot/!news/2023_03/male/1677753140weekend_w_kinie.jpg" alt="Weekend w kinie. Wygraj bilety do kina w Chojnickim Centrum Kultury!">
-            </div>
-            <div class="card-body">
-                <h4 class="card-title">Weekend w kinie. Wygraj bilety do kina w Chojnickim Centrum Kultury!</h4>
-                <p class="card-text"></p>
-            </div>
-        </a>
-    </div>
-</div>
-
-        </div>
-    </div>
-</div>
-</div></div></li>
-<li id="linkContact" class="main-menu-item has-mega-box"><a class="main-menu-item-link" href="#" data-target="megaBoxContact" title="Kontakt"><span>Kontakt</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ico-chevron-down" viewBox="0 0 448 512"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></a><div id="megaBoxContact" class="mega-box"><div class="mega-wrapper wrapper"><div class="content">
-    <div class="column w-30">
-        <section>
-            <h2>Adres:</h2>
-            <ul class="mega-links">
-                <li class="no-link">Redakcja i dział reklamy</li>
-                <li class="no-link">ul. Jana Pawła II 1b</li>
-                <li class="no-link">89-604 Chojnice</li>
-            </ul>
-        </section>
-    </div>
-    <div class="column w-30">
-        <section>
-            <h2>Telefony:</h2>
-            <ul class="mega-links">
-                <li class="no-link">Masz ważną informację?<br>Chcesz wyrazić swoją opinię?<br>Nagraj swoją wiadomość na automatyczną sekretarkę radia Weekend FM: <a href="tel:+48525655111"><strong>52 56 55 111</strong></a></li>
-                <li class="no-link">Redakcja i dział reklamy: <a href="tel:+48523971101"><strong>52 397 11 01</strong></a></li>
-            </ul>
-        </section>
-    </div>
-    <div class="column w-30">
-        <section>
-            <h2>E-mail:</h2>
-            <ul class="mega-links">
-                <li class="no-link">Redakcja portalu: <a href="mailto:portal@weekendfm.pl"><strong>portal@weekendfm.pl</strong></a></li>
-                <li class="no-link">Redakcja radiowa: <a href="mailto:redakcja@weekendfm.pl"><strong>redakcja@weekendfm.pl</strong></a></li>
-                <li class="no-link">Dział reklamy: <a href="mailto:reklama@weekendfm.pl"><strong>reklama@weekendfm.pl</strong></a></li>
-                <li class="no-link">INFO WEEKENDFM: <a href="mailto:info@weekendfm.pl"><strong>info@weekendfm.pl</strong></a></li>
-            </ul>
-        </section>
-    </div>
-</div>
-</div></div></li>
-<li id="linkClassifieds" class="main-menu-item"><a class="main-menu-item-link" href="http://localhost/wfm/www/?ogloszenia" title="Ogłoszenia"><span>Ogłoszenia</span></a></li>
-<li id="linkCompanies" class="main-menu-item"><a class="main-menu-item-link" href="http://localhost/wfm/www/?katalog-firm" title="Katalog firm"><span>Katalog firm</span></a></li> -->
-
-                            </ul>
-                        </div>
-                        <div class="col-9 col-xl-2 d-flex"></div>
+    <header id="mainHeader" class="main-header sticky-top">
+        <div class="top-bar d-none d-xl-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav frequencies">
+                            <li>
+                                <i class="bi bi-broadcast-pin"></i>
+                                <span class="location">Chojnice, Człuchów, Tuchola</span>
+                                <span class="frequency">99,30 FM</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-broadcast-pin"></i>
+                                <span class="location">Kościerzyna</span>
+                                <span class="frequency">91,70 FM</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-broadcast-pin"></i>
+                                <span class="location">Bytów</span>
+                                <span class="frequency">105,80 FM</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-broadcast-pin"></i>
+                                <span class="location">Miastko</span>
+                                <span class="frequency">87,80 FM</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-broadcast-pin"></i>
+                                <span class="location">Sępólno Krajeńskie</span>
+                                <span class="frequency">92,60 FM</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </header>
-
-        <div class="container">
+        </div>
+        <div class="middle-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-3 col-xl-10 position-relative">
+                        <a href="index.html" class="navbar-brand">
+                            <img loading="lazy" src="assets/img/radio-weekendfm-logo.png" alt="Radio Weekend FM">
+                        </a>
+                        <ul class="nav middle-bar-nav d-none d-xl-flex top-main-menu">
+                            <li class="has-submenu">
+                                <a href="" class="dropdown-toggle">Wiadomości</a>
+                                <div class="dropdown-menu">
+                                    <span><a class="dropdown-item" href="#">Action</a></span>
+                                    <span><a class="dropdown-item" href="#">Another action</a></span>
+                                    <span><a class="dropdown-item" href="#">Something else here</a></span>
+                                </div>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Radio</a>
+                                <div class="dropdown-menu">
+                                    <span><a class="dropdown-item" href="#">Action</a></span>
+                                    <span><a class="dropdown-item" href="#">Another action</a></span>
+                                    <span><a class="dropdown-item" href="#">Something else here</a></span>
+                                </div>
+                            </li>
+                            <li class="has-submenu active">
+                                <a href="" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Kultura i rozrywka</a>
+                                <div class="dropdown-menu">
+                                </div>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Konkursy</a>
+                                <div class="dropdown-menu">
+                                </div>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Kontakt</a>
+                                <div class="dropdown-menu">
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">Ogłoszenia</a>
+                            </li>
+                            <li>
+                                <a href="">Katalog firm</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-9 col-xl-2 d-flex"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="px-2">ŻÓŁTA KOPERTA itd</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="page">
+        <div class="container" style="display:block;">
             <div class="row">
                 <div class="col">
                     <div class="section-header">
@@ -389,53 +138,301 @@ Copyright © 2021 - 2025 by vbert
                     <div class="section-header bg-yellow">
                         <h2>Witamy w Weekend FM</h2>
                     </div>
-                    <p>hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd</p>
-                    <p>hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd</p>
-                    <p>hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd</p>
-                    <p>hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd</p>
-                    <p>hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd</p>
-                    <p>hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd 
-                       hqkwjdhkqjwsd</p>
+                    <div>
+                        <p>hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd</p>
+                        <p>hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd</p>
+                        <p>hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd</p>
+                        <p>hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd</p>
+                        <p>hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd</p>
+                        <p>hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd</p>
+                        <p>hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd</p>
+                        <p>hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd hqkwjdhkqjwsd</p>
+                    </div>
                 </div>
             </div>
         </div>
-
     </main>
 <script src="assets/lib/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 </html>
+
+<!-- 
+<li id="linkNews" class="main-menu-item has-mega-box"><a class="main-menu-item-link" href="#" data-target="megaBoxNews" title="Wiadomości"><span>Wiadomości</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ico-chevron-down" viewBox="0 0 448 512"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></a><div id="megaBoxNews" class="mega-box"><div class="mega-wrapper wrapper"><div class="content">
+<div class="column w-30">
+    <section>
+        <h2>Wybierz region:</h2>
+        <ul class="mega-links">
+            <li><a class="mega-link" href="http://localhost/wfm/www/?chojnice">Chojnice</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?muzyka">Muzyka</a></li>http://localhost/wfm/www/?czluchow">Człuchów</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?bytow">Bytów</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?koscierzyna">Kościerzyna</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?sepolno_krajenskie">Sępólno Krajeńskie</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?tuchola">Tuchola</a></li>
+        </ul>
+    </section>
+</div>
+<div class="column w-30">
+    <section>
+        <h2>Wybierz temat:</h2>
+        <ul class="mega-links">
+            <li><a class="mega-link" href="http://localhost/wfm/www/?wypadek">UWAGA Wypadek!</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?kronika_policyjna">Kronika policyjna</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?sport">Sport</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?kultura">Kultura</a></li>
+        </ul>
+    </section>
+</div>
+<div class="column w-30">
+    <section>
+        <h2>Polska i świat:</h2>
+        <ul class="mega-links">
+            <li><a class="mega-link" href="http://localhost/wfm/www/?polska_i_swiat">Polska i Świat</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Daj nam znać!</h2>
+        <ul class="mega-links">
+            <li class="no-link">Jesteś świadkiem czegoś ciekawego, sensacyjnego, bulwersującego?<br>Wyślij do nas wiadomość, zdjęcia lub filmy na adres: <a href="mailto:info@weekendfm.pl">info@weekendfm.pl</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Materiały sponsorowane</h2>
+        <ul class="mega-links">
+            <li><a class="mega-link" href="http://localhost/wfm/www/?artykuly_sponsorowane">Artykuły sponsorowane</a></li>
+        </ul>
+    </section>
+</div>
+</div>
+</div></div></li>
+<li id="linkRadio" class="main-menu-item has-mega-box"><a class="main-menu-item-link" href="#" data-target="megaBoxRadio" title="Radio"><span>Radio</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ico-chevron-down" viewBox="0 0 448 512"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></a><div id="megaBoxRadio" class="mega-box"><div class="mega-wrapper wrapper"><div class="content">
+<div class="column w-30">
+    <section>
+        <h2>Jak słuchać?</h2>
+        <ul class="mega-links">
+            <li><a class="mega-link" href="http://localhost/wfm/www/?n=49957#internet">Słuchaj przez Internet</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?n=49957#fm">Słuchaj w FM</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?n=49957#mobile">Słuchaj w telefonie</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Pobierz aplikację:</h2>
+        <div class="applications">
+            <a class="app-link" href="https://play.google.com/store/apps/details?id=pl.weekendfm.radioapp" target="_blank" title="Pobierz aplikację Radio Weekend FM ze sklepu Google Play">
+                <img src="assets/img/pobierz-z-google-play.png" alt="Sklep Google Play: Radio Weekend FM">
+            </a>
+            <a class="app-link" href="https://itunes.apple.com/pl/app/radio-weekend-fm/id895427024?mt=8" target="_blank" title="Pobierz aplikację Radio Weekend FM ze sklepu App Store">
+                <img src="assets/img/pobierz-z-app-store.png" alt="Sklep App Store: Radio Weekend FM">
+            </a>
+        </div>
+    </section>
+    <section>
+        <h2>Muzyka</h2>
+        <ul class="mega-links">
+            <li><a class="mega-link" href="http://localhost/wfm/www/arch.php?gralismy">Graliśmy w Weekend FM</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?hitport2">Lista przebojów - HIT-PORT</a></li>
+        </ul>
+    </section>
+</div>
+<div class="column w-30">
+    <section>
+        <h2>Audycje</h2>
+        <ul class="mega-links">
+            <li><a class="mega-link" href="http://localhost/wfm/www/?n=58483#rp">Weekend na dzień dobry</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?n=58483#wjb">Weekend jest blisko</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?n=58483#tmd">Weekend po południu</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?hitport2">Hit-Port</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?n=58483#wpm">Weekend pełen muzyki</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Audycje tematyczne</h2>
+        <ul class="mega-links">
+            <li><a class="mega-link" href="http://localhost/wfm/www/?motoweekend">Motoweekend</a></li>
+        </ul>
+    </section>
+</div>
+<div class="column w-30">
+    <section>
+        <h2>O radiu</h2>
+        <ul class="mega-links">
+            <li><a class="mega-link" href="http://localhost/wfm/www/?n=49977">Zasięg</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?n=50467">Ramówka</a></li>
+            <li><a class="mega-link" href="http://localhost/wfm/www/?n=49986">Ludzie radia</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Częstotliwości</h2>
+        <div class="frequencies">
+            <div class="frequency w-100"><h4>99,30 FM</h4><p>Chojnice, Człuchów, Tuchola</p></div>
+            <div class="frequency w-48"><h4>91,70 FM</h4><p>Kościerzyna</p></div>
+            <div class="frequency w-48"><h4>105,80 FM</h4><p>Bytów</p></div>
+            <div class="frequency w-48"><h4>87,80 FM</h4><p>Miastko</p></div>
+            <div class="frequency w-48"><h4>92,60 FM</h4><p>Sępólno Krajeńskie</p></div>
+        </div>
+    </section>
+</div>
+</div>
+</div></div></li>
+<li id="linkCulture" class="main-menu-item has-mega-box"><a class="main-menu-item-link" href="#" data-target="megaBoxCulture" title="Kultura i rozrywka"><span>Kultura i rozrywka</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ico-chevron-down" viewBox="0 0 448 512"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></a><div id="megaBoxCulture" class="mega-box"><div class="mega-wrapper wrapper"><div class="content">
+<div class="column">
+    <div class="cards w-100">
+        <div class="card-box">
+<div class="card">
+    <a href="http://localhost/wfm/www/?n=110185&amp;w-chojnickim-centrum-kultury-odbedzie-sie-dzien-seniora-atrakcja-bedzie-koncert-powrocisz-tu" title="Chojnice: W Chojnickim Centrum Kultury odbędzie się Dzień Seniora. Atrakcją będzie koncert &quot;Powrócisz tu&quot;">
+        <div class="card-image">
+            <img src="http://localhost/wfm/www/_fot/!news/2023_11/male/1700047768radoslaw_krajewicz.jpg" alt="W Chojnickim Centrum Kultury odbędzie się Dzień Seniora. Atrakcją będzie koncert &quot;Powrócisz tu&quot;">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">W Chojnickim Centrum Kultury odbędzie się Dzień Seniora. Atrakcją będzie koncert "Powrócisz tu"</h4>
+            <p class="card-text">Z piosenkami z repertuaru Ireny Santor.</p>
+        </div>
+    </a>
+</div>
+</div>
+
+<div class="card-box">
+<div class="card">
+    <a href="http://localhost/wfm/www/?n=110109&amp;miejsko-gminny-osrodek-kultury-w-kamieniu-krajenskim-zaprasza-na-recital-poetycki-i-odsoniecie-muralu" title="Sępólno Krajeńskie: Miejsko-Gminny Ośrodek Kultury w Kamieniu Krajeńskim zaprasza na recital poetycki i odsłonięcie muralu">
+        <div class="card-image">
+            <img src="http://localhost/wfm/www/_fot/!news/2023_11/male/1699607227polskim_slowem_pisane.jpg" alt="Miejsko-Gminny Ośrodek Kultury w Kamieniu Krajeńskim zaprasza na recital poetycki i odsłonięcie muralu">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Miejsko-Gminny Ośrodek Kultury w Kamieniu Krajeńskim zaprasza na recital poetycki i odsłonięcie muralu</h4>
+            <p class="card-text">Dziś (10.11.).</p>
+        </div>
+    </a>
+</div>
+</div>
+
+<div class="card-box">
+<div class="card">
+    <a href="http://localhost/wfm/www/?n=109860&amp;katarzyna-groniec-wystapi-w-chojnicach-rozmowa" title="Chojnice: Katarzyna Groniec wystąpi w Chojnicach (ROZMOWA)">
+        <div class="card-image">
+            <img src="http://localhost/wfm/www/_fot/!news/2023_10/male/1698305803koncert-katarzyny-groniec.jpg" alt="Katarzyna Groniec wystąpi w Chojnicach (ROZMOWA)">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Katarzyna Groniec wystąpi w Chojnicach (ROZMOWA)</h4>
+            <p class="card-text">W Chojnickim Centrum Kultury wokalistka i aktorka zaśpiewa w czwartek (26.10) piosenki ze swojej najnowszej płyty. </p>
+        </div>
+    </a>
+</div>
+</div>
+
+<div class="card-box">
+<div class="card">
+    <a href="http://localhost/wfm/www/?n=109836&amp;wernisaz-w-miejskiej-bibliotece-publicznej-w-tucholi-obrazy-zaprezentuje-malarz-samouk-albin-rozej-z-raciaza" title="Tuchola: Wernisaż w Miejskiej Bibliotece Publicznej w Tucholi. Obrazy zaprezentuje malarz-samouk Albin Rożej z Raciąża">
+        <div class="card-image">
+            <img src="http://localhost/wfm/www/_fot/!news/2023_10/male/1698151972wystawa_tuchola.jpg" alt="Wernisaż w Miejskiej Bibliotece Publicznej w Tucholi. Obrazy zaprezentuje malarz-samouk Albin Rożej z Raciąża">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Wernisaż w Miejskiej Bibliotece Publicznej w Tucholi. Obrazy zaprezentuje malarz-samouk Albin Rożej z Raciąża</h4>
+            <p class="card-text">Wystawę będzie można oglądać do 20 listopada.</p>
+        </div>
+    </a>
+</div>
+</div>
+
+<div class="card-box">
+<div class="card">
+    <a href="http://localhost/wfm/www/?n=109757&amp;w-czuchowie-jak-nad-sekwana-jutro-2110-odbeda-sie-tu-dni-kultury-francuskiej-oraz-konkurs-piosenki-francuskiej" title="Człuchów: W Człuchowie jak nad Sekwaną. Jutro (21.10.) odbędą się tu Dni Kultury Francuskiej oraz Konkurs Piosenki Francuskiej">
+        <div class="card-image">
+            <img src="http://localhost/wfm/www/_fot/!news/2023_10/male/1697777571plakat_dni_kultury_francuskiej.jpg" alt="W Człuchowie jak nad Sekwaną. Jutro (21.10.) odbędą się tu Dni Kultury Francuskiej oraz Konkurs Piosenki Francuskiej">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">W Człuchowie jak nad Sekwaną. Jutro (21.10.) odbędą się tu Dni Kultury Francuskiej oraz Konkurs Piosenki Francuskiej</h4>
+            <p class="card-text">Im. Jadwigi Loroch.</p>
+        </div>
+    </a>
+</div>
+</div>
+
+<div class="card-box">
+<div class="card">
+    <a href="http://localhost/wfm/www/?n=109731&amp;dzis-1910-w-czuchowie-koncert-ach-jak-przyjemnie-zagra-zespo-arte-con-brio" title="Człuchów: Dziś (19.10.) w Człuchowie koncert &quot;Ach, jak przyjemnie&quot;. Zagra zespół Arte Con Brio">
+        <div class="card-image">
+            <img src="http://localhost/wfm/www/_fot/!news/2023_10/male/1697618254arte_con_brio.jpg" alt="Dziś (19.10.) w Człuchowie koncert &quot;Ach, jak przyjemnie&quot;. Zagra zespół Arte Con Brio">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Dziś (19.10.) w Człuchowie koncert "Ach, jak przyjemnie". Zagra zespół Arte Con Brio</h4>
+            <p class="card-text">Początek koncertu o 18.00 w człuchowskim zamku.</p>
+        </div>
+    </a>
+</div>
+</div>
+
+    </div>
+</div>
+</div>
+</div></div></li>
+<li id="linkContests" class="main-menu-item has-mega-box"><a class="main-menu-item-link" href="#" data-target="megaBoxContests" title="Konkursy"><span>Konkursy</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ico-chevron-down" viewBox="0 0 448 512"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></a><div id="megaBoxContests" class="mega-box"><div class="mega-wrapper wrapper"><div class="content">
+<div class="column">
+    <div class="cards w-100">
+        <div class="card-box">
+<div class="card">
+    <a href="http://localhost/wfm/www/?n=109859&amp;konkurs-w-weekend-fm-wybierz-sie-na-niezwyka-kolacje-w-klimatycznej-restauracji-w-charzykowach" title="Konkurs w Weekend FM. Wybierz się na niezwykłą kolację w klimatycznej restauracji w Charzykowach ">
+        <div class="card-image">
+            <img src="http://localhost/wfm/www/_fot/!news/2023_10/male/1698304542konkurs-restauracja.jpg" alt="Konkurs w Weekend FM. Wybierz się na niezwykłą kolację w klimatycznej restauracji w Charzykowach ">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Konkurs w Weekend FM. Wybierz się na niezwykłą kolację w klimatycznej restauracji w Charzykowach </h4>
+            <p class="card-text"></p>
+        </div>
+    </a>
+</div>
+</div>
+
+<div class="card-box">
+<div class="card">
+    <a href="http://localhost/wfm/www/?n=105659&amp;weekend-w-kinie-wygraj-bilety-do-kina-w-chojnickim-centrum-kultury" title="Weekend w kinie. Wygraj bilety do kina w Chojnickim Centrum Kultury!">
+        <div class="card-image">
+            <img src="http://localhost/wfm/www/_fot/!news/2023_03/male/1677753140weekend_w_kinie.jpg" alt="Weekend w kinie. Wygraj bilety do kina w Chojnickim Centrum Kultury!">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Weekend w kinie. Wygraj bilety do kina w Chojnickim Centrum Kultury!</h4>
+            <p class="card-text"></p>
+        </div>
+    </a>
+</div>
+</div>
+
+    </div>
+</div>
+</div>
+</div></div></li>
+<li id="linkContact" class="main-menu-item has-mega-box"><a class="main-menu-item-link" href="#" data-target="megaBoxContact" title="Kontakt"><span>Kontakt</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ico-chevron-down" viewBox="0 0 448 512"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg></a><div id="megaBoxContact" class="mega-box"><div class="mega-wrapper wrapper"><div class="content">
+<div class="column w-30">
+    <section>
+        <h2>Adres:</h2>
+        <ul class="mega-links">
+            <li class="no-link">Redakcja i dział reklamy</li>
+            <li class="no-link">ul. Jana Pawła II 1b</li>
+            <li class="no-link">89-604 Chojnice</li>
+        </ul>
+    </section>
+</div>
+<div class="column w-30">
+    <section>
+        <h2>Telefony:</h2>
+        <ul class="mega-links">
+            <li class="no-link">Masz ważną informację?<br>Chcesz wyrazić swoją opinię?<br>Nagraj swoją wiadomość na automatyczną sekretarkę radia Weekend FM: <a href="tel:+48525655111"><strong>52 56 55 111</strong></a></li>
+            <li class="no-link">Redakcja i dział reklamy: <a href="tel:+48523971101"><strong>52 397 11 01</strong></a></li>
+        </ul>
+    </section>
+</div>
+<div class="column w-30">
+    <section>
+        <h2>E-mail:</h2>
+        <ul class="mega-links">
+            <li class="no-link">Redakcja portalu: <a href="mailto:portal@weekendfm.pl"><strong>portal@weekendfm.pl</strong></a></li>
+            <li class="no-link">Redakcja radiowa: <a href="mailto:redakcja@weekendfm.pl"><strong>redakcja@weekendfm.pl</strong></a></li>
+            <li class="no-link">Dział reklamy: <a href="mailto:reklama@weekendfm.pl"><strong>reklama@weekendfm.pl</strong></a></li>
+            <li class="no-link">INFO WEEKENDFM: <a href="mailto:info@weekendfm.pl"><strong>info@weekendfm.pl</strong></a></li>
+        </ul>
+    </section>
+</div>
+</div>
+</div></div></li>
+<li id="linkClassifieds" class="main-menu-item"><a class="main-menu-item-link" href="http://localhost/wfm/www/?ogloszenia" title="Ogłoszenia"><span>Ogłoszenia</span></a></li>
+<li id="linkCompanies" class="main-menu-item"><a class="main-menu-item-link" href="http://localhost/wfm/www/?katalog-firm" title="Katalog firm"><span>Katalog firm</span></a></li>
+ -->
+
