@@ -1,0 +1,182 @@
+/*
+ * Project: css
+ * File: /style.css
+ * File Created: 2025-07-11, 12:28:20
+ * Author: Wojciech Sobczak (wsobczak@gmail.com)
+ * -----
+ * Last Modified: 2025-07-18, 15:19:48
+ * Modified By: Wojciech Sobczak (wsobczak@gmail.com)
+ * -----
+ * Copyright © 2021 - 2025 by vbert
+ */
+
+:root {
+    --wfm-blue: #39d; /* #1999d5 */
+    --wfm-navy: #25a; /* #055aa5 */
+    --wfm-yellow: #fc0; /* #fdc406 */
+    --wfm-gray: #555;
+    --wfm-gray-light: #aaa;
+    --wfm-gray-lighter: #ededed;
+    --wfm-gray-dark: #222;
+    --wfm-blue-rgb: 51, 153, 221;
+    --wfm-navy-rgb: 34, 85, 170;
+    --wfm-yellow-rgb: 255, 204, 0;
+    --wfm-gray-rgb: 85, 85, 85;
+    --wfm-gray-light-rgb: 170, 170, 170;
+    --wfm-gray-lighter-rgb: 237, 237, 237;
+    --wfm-gray-dark-rgb: 34, 34, 34;
+}
+
+body a {
+    text-decoration: none;
+    transition: all .4s;
+}
+
+/* top-bar */
+.top-bar {
+    --top-bar-bg: var(--wfm-navy);
+    --top-bar-color: var(--wfm-gray-lighter);
+    --top-bar-hover-bg: var(--wfm-yellow);
+    --top-bar-hover-color: var(--wfm-gray-dark);
+    --top-bar-highlight-color: var(--wfm-yellow);
+    height: 14px;
+    background-color: var(--top-bar-bg);
+}
+
+.top-bar .frequencies {
+    justify-content: center;
+    list-style-type: none;
+}
+
+.top-bar li {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding: 2px 1rem;
+    background-color: var(--top-bar-bg);
+    color: var(--top-bar-color);
+    font-size: .625rem;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.top-bar li::after {
+    content: '\f309';
+    position: absolute;
+    right: -.5rem;
+    color: var(--top-bar-highlight-color);
+    font-family: bootstrap-icons !important;
+    font-size: 1rem;
+    z-index: 2;
+}
+.top-bar li:last-of-type::after {
+    content: '';
+}
+
+.top-bar li:hover,
+.top-bar li:focus,
+.top-bar li:active {
+    background-color: var(--top-bar-hover-bg);
+    color: var(--top-bar-hover-color);
+}
+
+.top-bar .location,
+.top-bar .frequency {
+    padding: 0 .25rem;
+}
+
+.top-bar .frequency {
+    font-size: .675rem;
+    font-weight: 900;
+}
+
+/* section header */
+.section-header {
+    position: relative;
+    margin: calc(var(--bs-gutter-x) * .5) 0px calc(var(--bs-gutter-x) * .478) 0px;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.section-header::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    height: 12px;
+    top: 50%;
+    margin-top: -6px;
+    background-color: var(--bs-border-color);
+    z-index: -1;
+}
+
+.section-header * {
+    display: inline-block;
+    margin: auto;
+    padding: .252rem .725rem;
+    background: var(--bs-white);
+    color: var(--wfm-navy);
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section-header.bg-blue::before {
+    background-color: var(--wfm-blue);
+}
+
+.section-header.bg-yellow::before {
+    background-color: var(--wfm-yellow);
+}
+
+@media (max-width: 992px) {
+    .section-header {
+        margin: calc(var(--bs-gutter-x) * .35) 0px calc(var(--bs-gutter-x) * .35) 0px;
+    }
+
+    .section-header * {
+        font-size: 1.1rem;
+    }
+}
+
+.main-header {
+    display: block;
+}
+
+@media (min-width: 1200px) {
+    .main-header .row {
+        padding-left: calc(var(--bs-gutter-x) + 144px);
+    }
+}
+
+/* middle-bar */
+.main-header .middle-bar {
+    --middle-bar-bg: var(--bs-white);
+    --middle-bar-color: var(--wfm-navy);
+    --middle-bar-hover-bg: var(--wfm-navy);
+    --middle-bar-hover-color: var(--bs-white);
+    --middle-bar-highlight-color: var(--wfm-yellow);
+    background-color: var(--middle-bar-bg);
+}
+
+@media (min-width: 1200px) {
+    .main-header .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -22px;
+        left: calc(-0.5 * var(--bs-gutter-x) - 144px);
+        height: 100px;
+        padding: .5rem calc(0.5 * var(--bs-gutter-x));
+        /* box-shadow: 0px 3px 5px rgba(var(--bs-black-rgb),.1);
+        background-color: var(--bs-white); */
+        z-index: 1999;
+    }
+
+    .navbar-brand img {
+        max-height: 100%;
+        width: auto;
+    }
+}
+
