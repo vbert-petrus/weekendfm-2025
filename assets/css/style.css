@@ -4,7 +4,7 @@
  * File Created: 2025-07-11, 12:28:20
  * Author: Wojciech Sobczak (wsobczak@gmail.com)
  * -----
- * Last Modified: 2025-07-24, 15:09:28
+ * Last Modified: 2025-07-25, 9:14:10
  * Modified By: Wojciech Sobczak (wsobczak@gmail.com)
  * -----
  * Copyright © 2021 - 2025 by vbert
@@ -107,6 +107,7 @@ body a {
     padding: .252rem .725rem;
     background: var(--bs-white);
     color: var(--wfm-navy);
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -132,10 +133,11 @@ body a {
 
 .main-header {
     display: block;
-    box-shadow: 0px 0px 5px rgba(var(--bs-black-rgb), 0.25);
+    /* box-shadow: 0px 4px 4px rgba(var(--bs-black-rgb), 0.1); */
 }
 
 @media (min-width: 1200px) {
+    .top-bar .row,
     .main-header .row {
         padding-left: calc(var(--bs-gutter-x) + 150px);
     }
@@ -151,7 +153,7 @@ body a {
         top: -23px;
         left: calc(-0.5 * var(--bs-gutter-x) - 150px);
         width: 166px;
-        padding: .75rem calc(0.825 * var(--bs-gutter-x));
+        padding: calc(0.5 * var(--bs-gutter-x)) calc(0.825 * var(--bs-gutter-x));
         background-color: var(--bs-white);
         z-index: 1999;
         transition: all .4s;
@@ -181,6 +183,7 @@ body a {
 }
 
 .main-header .middle-bar-nav {
+    flex-wrap: nowrap;
     align-items: stretch;
     gap: .325rem;
     list-style: none;
@@ -195,9 +198,10 @@ body a {
     display: inline-block;
     padding: .525rem .75rem;
     color: inherit;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 1rem;
     font-weight: 600;
+    text-wrap: nowrap;
     transition: all .4s;
 }
 
@@ -210,10 +214,6 @@ body a {
 .top-main-menu li.active > a:hover {
     background-color: var(--middle-bar-hover-bg);
     color: var(--middle-bar-hover-color);
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: all .4s;
 }
 
 
