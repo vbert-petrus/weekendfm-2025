@@ -4,7 +4,7 @@
  * File Created: 2025-07-11, 12:28:20
  * Author: Wojciech Sobczak (wsobczak@gmail.com)
  * -----
- * Last Modified: 2025-07-18, 15:19:48
+ * Last Modified: 2025-07-24, 15:09:28
  * Modified By: Wojciech Sobczak (wsobczak@gmail.com)
  * -----
  * Copyright © 2021 - 2025 by vbert
@@ -29,60 +29,51 @@
 
 body a {
     text-decoration: none;
-    transition: all .4s;
+    /* transition: all .4s; */
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+    max-width: 1320px;
 }
 
 /* top-bar */
 .top-bar {
-    --top-bar-bg: var(--wfm-navy);
-    --top-bar-color: var(--wfm-gray-lighter);
-    --top-bar-hover-bg: var(--wfm-yellow);
-    --top-bar-hover-color: var(--wfm-gray-dark);
-    --top-bar-highlight-color: var(--wfm-yellow);
-    height: 14px;
+    --top-bar-bg: var(--bs-white);
+    --top-bar-color: var(--wfm-gray);
+    --top-bar-highlight-color: var(--wfm-blue);
+    height: 1.504rem;
     background-color: var(--top-bar-bg);
 }
 
 .top-bar .frequencies {
-    justify-content: center;
+    justify-content: space-between;
     list-style-type: none;
 }
 
 .top-bar li {
+    flex-grow: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: .325rem;
     position: relative;
-    padding: 2px 1rem;
+    padding: 0 .525rem;
     background-color: var(--top-bar-bg);
     color: var(--top-bar-color);
     font-size: .625rem;
-    line-height: 1em;
+    line-height: 1.504rem;
     text-transform: uppercase;
 }
 
-.top-bar li::after {
-    content: '\f309';
-    position: absolute;
-    right: -.5rem;
+.top-bar i.bi {
     color: var(--top-bar-highlight-color);
-    font-family: bootstrap-icons !important;
-    font-size: 1rem;
-    z-index: 2;
-}
-.top-bar li:last-of-type::after {
-    content: '';
-}
-
-.top-bar li:hover,
-.top-bar li:focus,
-.top-bar li:active {
-    background-color: var(--top-bar-hover-bg);
-    color: var(--top-bar-hover-color);
-}
-
-.top-bar .location,
-.top-bar .frequency {
-    padding: 0 .25rem;
+    font-size: .75rem;
+    font-weight: 900;
 }
 
 .top-bar .frequency {
@@ -141,42 +132,102 @@ body a {
 
 .main-header {
     display: block;
+    box-shadow: 0px 0px 5px rgba(var(--bs-black-rgb), 0.25);
 }
 
 @media (min-width: 1200px) {
     .main-header .row {
-        padding-left: calc(var(--bs-gutter-x) + 144px);
+        padding-left: calc(var(--bs-gutter-x) + 150px);
     }
 }
 
 /* middle-bar */
-.main-header .middle-bar {
-    --middle-bar-bg: var(--bs-white);
-    --middle-bar-color: var(--wfm-navy);
-    --middle-bar-hover-bg: var(--wfm-navy);
-    --middle-bar-hover-color: var(--bs-white);
-    --middle-bar-highlight-color: var(--wfm-yellow);
-    background-color: var(--middle-bar-bg);
-}
-
 @media (min-width: 1200px) {
     .main-header .navbar-brand {
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: -22px;
-        left: calc(-0.5 * var(--bs-gutter-x) - 144px);
-        height: 100px;
-        padding: .5rem calc(0.5 * var(--bs-gutter-x));
-        /* box-shadow: 0px 3px 5px rgba(var(--bs-black-rgb),.1);
-        background-color: var(--bs-white); */
+        top: -23px;
+        left: calc(-0.5 * var(--bs-gutter-x) - 150px);
+        width: 166px;
+        padding: .75rem calc(0.825 * var(--bs-gutter-x));
+        background-color: var(--bs-white);
         z-index: 1999;
+        transition: all .4s;
     }
 
-    .navbar-brand img {
-        max-height: 100%;
-        width: auto;
+    .main-header .navbar-brand img {
+        width: 100%;
     }
 }
 
+@media (max-width: 1199px) {
+    .main-header .navbar-brand img {
+        height: 50px;
+    }
+}
+
+.main-header .middle-bar {
+    --middle-bar-bg: var(--bs-white);
+    --middle-bar-color: var(--wfm-navy);
+    --middle-bar-hover-bg: var(--wfm-yellow);
+    --middle-bar-hover-color: var(--bs-black);
+    --middle-bar-highlight-bg: var(--wfm-blue);
+    --middle-bar-highlight-color: var(--bs-white);
+    background-color: var(--middle-bar-bg);
+    color: var(--middle-bar-color);
+    text-transform: uppercase;
+}
+
+.main-header .middle-bar-nav {
+    align-items: stretch;
+    gap: .325rem;
+    list-style: none;
+}
+
+.top-main-menu li {
+    position: relative;
+    padding-top: .525rem;
+}
+
+.top-main-menu li > a {
+    display: inline-block;
+    padding: .525rem .75rem;
+    color: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all .4s;
+}
+
+.top-main-menu li.active > a {
+    background-color: var(--middle-bar-highlight-bg);
+    color: var(--middle-bar-highlight-color);
+}
+
+.top-main-menu li > a:hover,
+.top-main-menu li.active > a:hover {
+    background-color: var(--middle-bar-hover-bg);
+    color: var(--middle-bar-hover-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all .4s;
+}
+
+
+.top-main-menu .has-submenu .dropdown-menu {
+    transform: translate(0px, 46px) !important;
+}
+
+.main-header .bottom-bar {
+    --bottom-bar-bg: var(--wfm-blue);
+    --bottom-bar-color: var(--bs-white);
+    --bottom-bar-hover-bg: var(--wfm-navy);
+    --bottom-bar-hover-color: var(--bs-white);
+    --bottom-bar-highlight-color: var(--wfm-yellow);
+    border-bottom: 1px solid var(--wfm-blue);
+    background-color: var(--bottom-bar-bg);
+    color: var(--bottom-bar-color);
+}
